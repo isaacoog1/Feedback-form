@@ -8,6 +8,10 @@
     ],
     "routes": [
         {
+            "src": "/api/store-data",
+            "dest": "index.js"
+          },
+        {
             "src": "/(.*)",
             "dest": "/"
         }
