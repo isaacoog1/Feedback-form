@@ -22,6 +22,10 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+app.get('/', (raq, res) => {
+  res.send('Hello world!');
+})
+
 app.post("/api/store-data", async (req, res) => {
   try {
     const { fullname, email, rating, message } = req.body;
