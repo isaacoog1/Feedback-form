@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/styles/feedback.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="design"></div>
+        <div class="design2" data-aos="zoom-in"></div>
+        <div class="wrapper">
+            <div class="header">
+                <h2 data-aos="zoom-in-up">Feedback 😀</h2>
+            </div>
+            <div class="feedback-form">
+                <form action="" method="" id="feedback-form">
+                    <input type="text" name="fullname" placeholder="Full name" id="fullname" data-aos="fade-up">
+                    <input type="email" name="email" placeholder="Email" id="email" data-aos="fade-up"
+                        data-aos-delay="300">
+                    <input type="text" name="rating" placeholder="Rating" id="rating" data-aos="fade-up"
+                        data-aos-delay="600">
+                    <textarea name="message" cols="30" rows="7" placeholder="Message" id="message" data-aos="fade-up"
+                        data-aos-delay="900"></textarea>
+                    <button type="submit" id="submit" data-aos="zoom-in-up" data-aos-delay="1100">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p class="emoji">😃</p>
+            <p class="remark">Thank you for your feedback!</p>
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="request.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 1000,
+            easing: "ease-in-sine",
+        });
+        AOS.refresh();
+    </script>
+</body>
+
+</html>
