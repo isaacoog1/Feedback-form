@@ -46,6 +46,15 @@ app.post("/api/store-data", async (req, res) => {
   }
 });
 
+app.get('/api/get-data', async (req, res) => {
+  try {
+    const Feedbacks = await Feedback.find()
+    res.json(Feedbacks)
+  } catch(error) {
+    console.log('Error occurred: ', error);
+  }
+})
+
 app.listen(8000, () => {
   console.log("server started on port 8000");
 });
