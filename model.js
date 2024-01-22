@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//Define a schema for the collections in the database
 const feedbackSchema = new mongoose.Schema({
     fullname: { type: String, required:true },
     email: { type: String, required: true },
