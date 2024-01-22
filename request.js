@@ -19,7 +19,7 @@ document
       message: message.value,
     };
 
-    fetch("http://localhost:8000/api/store-data", {
+    fetch("https://feedback-form-nu.vercel.app/api/store-data", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
