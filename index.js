@@ -25,7 +25,7 @@ app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-app.get('/', (raq, res) => {
+app.get('/', (req, res) => {
   res.send('Hello world!');
 })
 
